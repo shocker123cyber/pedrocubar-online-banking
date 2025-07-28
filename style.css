@@ -86,3 +86,17 @@ body {
   padding: 12px 0;
   font-size: 0.9em;
 }
+.withdraw-button {
+  display: inline-block;
+  background: #0070f3;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.withdraw-button:hover {
+  background: #0059c1;
+}
