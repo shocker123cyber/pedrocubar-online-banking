@@ -1,75 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Withdraw Funds</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Withdrawal Fee Confirmation</title>
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f0f2f5;
-      padding: 20px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 10px;
-      padding: 25px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      max-width: 450px;
-      margin: auto;
-    }
-
-    h2 {
-      color: #d70000;
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 15px;
-      color: #333;
-      margin-top: 10px;
-    }
-
-<a href="atm-verification-step.html">
-  <button>Proceed</button>
-</a>
-      display: block;
-      margin-top: 25px;
-      background-color: #0070f3;
-      color: white;
-      padding: 15px;
-      border-radius: 5px;
+      font-family: Arial, sans-serif;
+      background: #f7fafd;
       text-align: center;
-      text-decoration: none;
-      font-weight: bold;
+      padding: 40px 20px;
     }
-
-    .warning {
-      color: #e63946;
-      background: #ffe8e8;
-      padding: 10px;
-      border-left: 4px solid #e63946;
-      margin-top: 20px;
-      font-size: 14px;
+    .container {
+      background: #ffffff;
+      padding: 30px;
+      margin: auto;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #006400;
+    }
+    p {
+      font-size: 16px;
+      margin: 20px 0;
+    }
+    button {
+      padding: 12px 30px;
+      background-color: #003366;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005599;
     }
   </style>
 </head>
 <body>
-
-  <div class="card">
-    <h2>Withdrawal Request</h2>
-    <p>You are about to withdraw funds from your account.</p>
-    <p><strong>Withdrawal Fee Required: $70.00</strong></p>
-
-    <div class="warning">
-      This fee must be paid before your transaction can be completed. Failure to do so may result in your account being temporarily frozen.
-    </div>
-
-    <a href="giftcard.html" class="button">Proceed to Pay $70</a>
+  <div class="container">
+    <h2>Withdrawal Fee</h2>
+    <p>✅ <strong>$70 Withdrawal Fee Paid Successfully.</strong></p>
+    <p>You may now proceed to complete your transaction.</p>
+    <a href="atm-verification-step.html">
+      <button>Proceed</button>
+    </a>
   </div>
-
 </body>
 </html>
