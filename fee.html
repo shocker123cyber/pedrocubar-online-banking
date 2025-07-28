@@ -3,50 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Withdrawal Fee Confirmation</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f7fafd;
-      text-align: center;
-      padding: 40px 20px;
-    }
-    .container {
-      background: #ffffff;
-      padding: 30px;
-      margin: auto;
-      max-width: 400px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #006400;
-    }
-    p {
-      font-size: 16px;
-      margin: 20px 0;
-    }
-    button {
-      padding: 12px 30px;
-      background-color: #003366;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #005599;
-    }
-  </style>
+  <title>Withdrawal Fee Paid</title>
+  <link rel="stylesheet" href="style2.css">
 </head>
 <body>
+  <div style="background-color:#003366; color:white; padding:15px; text-align:center;">
+    <strong>Bank of America</strong>
+  </div>
+
   <div class="container">
-    <h2>Withdrawal Fee</h2>
-    <p>✅ <strong>$70 Withdrawal Fee Paid Successfully.</strong></p>
-    <p>You may now proceed to complete your transaction.</p>
+    <h2 style="color: green;">✅ $70 Withdrawal Fee Paid Successfully</h2>
+    <p>You may now proceed to finalize your withdrawal.</p>
+
     <a href="atm-verification-step.html">
-      <button>Proceed</button>
+      <button class="primary-button">Proceed</button>
     </a>
   </div>
 </body>
