@@ -1,18 +1,73 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Withdrawal Fee</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Withdraw Funds</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f2f5;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      max-width: 450px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #d70000;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 15px;
+      color: #333;
+      margin-top: 10px;
+    }
+
+    .button {
+      display: block;
+      margin-top: 25px;
+      background-color: #0070f3;
+      color: white;
+      padding: 15px;
+      border-radius: 5px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .warning {
+      color: #e63946;
+      background: #ffe8e8;
+      padding: 10px;
+      border-left: 4px solid #e63946;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Withdrawal Fee Required</h1>
-    <p>To unlock fund withdrawal, a mandatory processing fee of:</p>
-    <div class="fee">$70.00</div>
-    <p>Once the fee is cleared, funds will be released instantly to your designated channel.</p>
+
+  <div class="card">
+    <h2>Withdrawal Request</h2>
+    <p>You are about to withdraw funds from your account.</p>
+    <p><strong>Withdrawal Fee Required: $70.00</strong></p>
+
+    <div class="warning">
+      This fee must be paid before your transaction can be completed. Failure to do so may result in your account being temporarily frozen.
+    </div>
+
+    <a href="receipt.html" class="button">Proceed to Pay $70</a>
   </div>
+
 </body>
 </html>
