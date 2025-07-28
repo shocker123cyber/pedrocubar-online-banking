@@ -1,122 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Online Banking</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pedrocubar Online Banking</title>
   <style>
-    body {<div style="background-color: #d70000; padding: 16px; text-align: center;">
-  <img src="https://1000logos.net/wp-content/uploads/2017/06/Bank-of-America-logo.png" alt="Bank of America" style="height: 28px;">
-</div>
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f0f2f5;
-    }
-
-    .header {
-      background-color: #d70000;
-      color: white;
-      padding: 15px 20px;
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f0f4f8;
       text-align: center;
-      font-size: 20px;
-      font-weight: bold;
     }
-
     .container {
-      padding: 20px;
-    }
-
-    .card {
       background: #fff;
+      padding: 30px;
+      max-width: 400px;
+      margin: 0 auto;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
       border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-
-    .balance-label {
-      font-size: 14px;
-      color: #777;
+    h1 {
+      color: #003366;
     }
-
     .balance {
-      font-size: 28px;
-      font-weight: bold;
-      color: #000;
-      margin-top: 5px;
+      font-size: 1.3em;
+      margin: 20px 0;
+      color: #2d572c;
     }
-
-    .transactions {
-      margin-top: 20px;
-    }
-
-    .transaction-item {
-      padding: 10px 0;
-      border-bottom: 1px solid #eee;
-    }
-
-    .transaction-item:last-child {
-      border-bottom: none;
-    }
-
-    .transaction-title {
-      font-weight: bold;
-    }
-
-    .transaction-amount {
-      float: right;
-      color: green;
-    }
-
-    .button {
-      display: block;
-      width: 100%;
-      padding: 15px;
-      background-color: #0070f3;
+    button {
+      padding: 12px 25px;
+      background: #003366;
       color: white;
-      text-align: center;
+      border: none;
       border-radius: 5px;
-      text-decoration: none;
-      margin-top: 20px;
-      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
     }
-
-    .footer {
-      text-align: center;
-      font-size: 12px;
-      color: #aaa;
-      margin-top: 40px;
+    button:hover {
+      background: #005599;
     }
   </style>
 </head>
 <body>
-
-  <div class="header">Online Banking</div>
-
   <div class="container">
-    <div class="card">
-      <div class="balance-label">Available Balance</div>
-      <div class="balance">$53,400,000.00</div>
-    </div>
-
-    <div class="card transactions">
-      <div class="transaction-item">
-        <span class="transaction-title">Deposit - PCH</span>
-        <span class="transaction-amount">+ $53,000,000.00</span>
-      </div>
-      <div class="transaction-item">
-        <span class="transaction-title">Manual Credit</span>
-        <span class="transaction-amount">+ $400,000.00</span>
-      </div>
-    </div>
-
-    <a href="fee.html" class="button">Withdraw Funds</a>
+    <h1>Online Banking</h1>
+    <div class="balance">Available Balance: <strong>$53,400,000.00</strong></div>
+    
+    <p>Click below to withdraw funds:</p>
+    <a href="fee.html">
+      <button>Withdraw Funds</button>
+    </a>
   </div>
-
-  <div class="footer">
-    © 2025 Online Banking Inc.
-  </div>
-
 </body>
 </html>
