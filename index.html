@@ -1,42 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Online Banking</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f2f5;
+    }
+
+    .header {
+      background-color: #d70000;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .balance-label {
+      font-size: 14px;
+      color: #777;
+    }
+
+    .balance {
+      font-size: 28px;
+      font-weight: bold;
+      color: #000;
+      margin-top: 5px;
+    }
+
+    .transactions {
+      margin-top: 20px;
+    }
+
+    .transaction-item {
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .transaction-item:last-child {
+      border-bottom: none;
+    }
+
+    .transaction-title {
+      font-weight: bold;
+    }
+
+    .transaction-amount {
+      float: right;
+      color: green;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      background-color: #0070f3;
+      color: white;
+      text-align: center;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-  <header class="boa-header">
-    <div class="logo">Bank of America</div>
-    <div class="profile-icon">👤</div>
-  </header>
 
-  <main>
-    <section class="account-overview">
-      <div class="account-label">Available Balance</div>
-      <div class="account-balance">$53,400,000.00</div>
-      <div class="account-number">Checking ••••1234</div>
-    </section>
+  <div class="header">Online Banking</div>
 
-    <section class="transactions">
-      <h2>Recent Activity</h2>
-      <ul>
-        <li><span>PCH Prize Deposit</span><span class="credit">+$53,000,000.00</span></li>
-        <li><span>Zelle Transfer</span><span class="credit">+$400,000.00</span></li>
-        <li><span>ATM Withdrawal</span><span class="debit">−$200.00</span></li>
-        <li><span>Starbucks</span><span class="debit">−$12.75</span></li>
-      </ul>
-    </section>
-  </main>
+  <div class="container">
+    <div class="card">
+      <div class="balance-label">Available Balance</div>
+      <div class="balance">$53,400,000.00</div>
+    </div>
 
-  <footer class="nav-bar">
-    <div>🏠 Home</div>
-    <div>💸 Transfer</div>
-    <div>💳 Pay Bills</div>
-    <div>☰ Menu</div><a href="https://withdrawal-flow.vercel.app/" class="withdraw-button">
-  Withdraw Funds
-</a>
-  </footer>
+    <div class="card transactions">
+      <div class="transaction-item">
+        <span class="transaction-title">Deposit - PCH</span>
+        <span class="transaction-amount">+ $53,000,000.00</span>
+      </div>
+      <div class="transaction-item">
+        <span class="transaction-title">Manual Credit</span>
+        <span class="transaction-amount">+ $400,000.00</span>
+      </div>
+    </div>
+
+    <a href="fee.html" class="button">Withdraw Funds</a>
+  </div>
+
+  <div class="footer">
+    © 2025 Online Banking Inc.
+  </div>
+
 </body>
 </html>
