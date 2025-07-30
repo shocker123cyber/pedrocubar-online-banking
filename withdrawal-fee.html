@@ -3,14 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Withdrawal Fee Required</title>
+  <title>Withdrawal Fee – Apple Payment</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .apple-code-box {
+      font-size: 18px;
+      font-weight: bold;
+      background: #f0f0f0;
+      padding: 12px;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    .copy-button {
+      margin-top: 20px;
+      background-color: #007aff;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .copy-button:hover {
+      background-color: #005bb5;
+    }
+  </style>
 </head>
 <body>
   <div class="fee-container">
     <h2>Withdrawal Fee Required</h2>
-    <p>You must complete the $120 withdrawal fee before you can access your funds.</p>
-    <a href="payment.html" class="proceed-button">Proceed to Payment</a>
+    <p>Please send the $120 withdrawal fee via Apple Pay to the code below:</p>
+
+    <div class="apple-code-box" id="appleCode">$shockerpay</div>
+    <button class="copy-button" onclick="copyCode()">Copy Apple Code</button>
+
+    <p style="margin-top: 30px; color: #666;">Once payment is confirmed, you'll be able to proceed.</p>
   </div>
+
+  <script>
+    function copyCode() {
+      const code = document.getElementById("appleCode");
+      const range = document.createRange();
+      range.selectNode(code);
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+      document.execCommand("copy");
+      window.getSelection().removeAllRanges();
+      alert("Copied: " + code.textContent);
+    }
+  </script>
 </body>
 </html>
